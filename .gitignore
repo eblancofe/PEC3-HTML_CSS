@@ -1,0 +1,8 @@
+# UOC - Máster en Desarrollo de Sitios y Aplicaciones Web 
+# Asignatura: Herramientas HTML y CSS I - Aula 1 
+# Alumno: Eugenio Blanco Fernández - eblancofe@uoc.edu
+
+# Configuración de archivo .gitignore para omitir directorios/archivos de nuestro proyecto
+
+# Directorio /dist (omisión)
+/dist
