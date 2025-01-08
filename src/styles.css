@@ -11,7 +11,10 @@ body {
   } 
 /* Personalizar la imagen de fondo en cabecera del portal Web */
 .fondo{
-  background-image: url("./images/00-panoramica.jpg");
+  /*background-image: url("./images/00-panoramica.jpg");*/
+  background-image: image-set(
+    url("./images/00-panoramica.avif") type("image/avif"),
+    url("./images/00-panoramica.jpg") type("image/jpeg"));
   background-size: 100% 100%;
 }
 /* Personalizar los títulos del portal Web */
