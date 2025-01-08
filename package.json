@@ -11,7 +11,7 @@
   },
   "name": "pec3-html_css",
   "version": "1.0.0",
-  "description": "PEC3 de la asignatura \"Herramientas HTML y CSS I\" del Máster \"Desarrollo de Sitios y Aplicaciones Web\" de la UOC",  
+  "description": "PEC3 de la asignatura \"Herramientas HTML y CSS I\" del Máster \"Desarrollo de Sitios y Aplicaciones Web\" de la UOC",
   "source": "src/index.html",
   "scripts": {
     "start": "npm-run-all clean parcel:dev",
