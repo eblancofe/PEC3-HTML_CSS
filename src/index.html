@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>    
+    <meta charset="utf-8"/><!-- configuración de caractéres UTF-8 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><!-- configuramos para dispositivos móviles/tabletas -->
+    <title>Boilerplate Web del municipio Santibáñez el Bajo - UOC-P3. Desarrollo de una web (eblancofe) - PRINCIPAL</title>
+    <!-- vinculamos archivos CSS y JS -->
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" defer src="./app.js"></script><!-- se carga el script JS en modo 'defer' -->
+    <!-- atribución de favicon -->
+    <!-- <a target="_blank" href="https://icons8.com/icon/60044/village">Village</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+    <link rel="shortcut icon" href="./icons/favicon.png"><!-- inserción de favicon -->
+  </head>
+  <body>    
+    <include src="./src/header.html"></include><!-- insertamos archivo HTML de cabecera -->
+    <!-- contenido de la página PRINCIPAL-INDEX -->
+    <main><!-- Inicio cuerpo de la página -->
+      <article>
+        <p>
+          Bienvenidos a la página principal del portal Web del municipio de <q>Santibáñez el Bajo</q>. 
+        </p>
+        <p>
+          En esta página podrá encontrar una serie de enlaces a distintas partes del portal Web.
+          Para ello debe de ir pulsando sobre la barra del menú de navegación que se encuentra en la parte superior de la página, y desde cualquier enlace puede empezar a navegar en las 
+          diversas páginas de este <q>Boilerplate</q>.
+        </p>
+        <p>
+          Una pequeña muestra del contenido que se va a encontrar dentro del portal Web, es el siguiente:      
+        </p>
+      </article>
+      <section><!-- sección de imágenes --> 
+        <div class="row">
+          <div class="column_portada_index left_portada_index">
+            <p>
+              <picture><!-- imagen responsive de distintos tamaños escritorio/tableta/móvil-->
+                <source srcset="./images/01-tejados@desktop.jpg" media="(min-width: 990px)">                
+                <source srcset="./images/01-tejados@tablet.jpg" media="(min-width: 750px)">     
+                <!-- Imagen final en formato (SVG) con circulo vectorial de fondo -->         
+                <svg width="480" height="360" xmlns="http://www.w3.org/2000/svg">
+                  <circle r="160" cx="170" cy="160" fill="rgb(37, 95, 61)" />
+                  <image x="50" y="60" width="240" height="180" href="./images/01-tejados@mobile.jpg"/>
+                  Lo siento, el navegador Web no soporta archivos con formato SVG.  
+                </svg>
+                <figcaption><b>Fuente:</b> Imagen de <q>Eugenio Blanco Fern&aacute;ndez</q>. Tejados de Santibáñez el Bajo.</figcaption>
+              </picture>
+            </p>
+          </div>
+          <div class="column_portada_index right_portada_index">
+              <p>
+                <picture><!-- imagen responsive de distintos tamaños escritorio/tableta/móvil-->
+                  <source srcset="./images/02-puerta@desktop.jpg" media="(min-width: 990px)">                
+                  <source srcset="./images/02-puerta@tablet.jpg" media="(min-width: 750px)"> 
+                  <!-- Imagen final en formato (SVG) con circulo vectorial de fondo -->
+                  <svg width="480" height="360" xmlns="http://www.w3.org/2000/svg">
+                    <circle r="160" cx="170" cy="160" fill="rgb(37, 95, 61)" />
+                    <image x="50" y="60" width="240" height="180" href="./images/02-puerta@mobile.jpg"/>
+                    Lo siento, el navegador Web no soporta archivos con formato SVG.  
+                  </svg>
+                  <figcaption><b>Fuente:</b> Imagen de <q>Eugenio Blanco Fern&aacute;ndez</q>. Puerta de monumento histórico.</figcaption>
+                </picture>
+              </p>
+          </div>
+          <div class="column_portada_index middle_portada_index">
+            <p>
+              <picture><!-- imagen responsive de distintos tamaños escritorio/tableta/móvil-->
+                <source srcset="./images/03-montes@desktop.jpg" media="(min-width: 990px)">                
+                <source srcset="./images/03-montes@tablet.jpg" media="(min-width: 750px)">    
+                <!-- Imagen final en formato (SVG) con circulo vectorial de fondo -->            
+                <svg width="480" height="360" xmlns="http://www.w3.org/2000/svg">
+                  <circle r="160" cx="170" cy="160" fill="rgb(37, 95, 61)" />
+                  <image x="50" y="60" width="240" height="180" href="./images/03-montes@mobile.jpg"/>
+                  Lo siento, el navegador Web no soporta archivos con formato SVG.  
+                </svg>
+                <figcaption><b>Fuente:</b> Imagen de <q>Eugenio Blanco Fern&aacute;ndez</q>. Paisaje montañoso de montes de Santibáñez el Bajo.</figcaption>
+              </picture>
+            </p>
+          </div>
+          <div class="column_portada_index middle_portada_index">
+            <p>              
+              <picture><!-- imagen responsive de distintos tamaños escritorio/tableta/móvil -->
+                <source srcset="./images/04-dehesa@desktop.jpg" media="(min-width: 990px)">                
+                <source srcset="./images/04-dehesa@tablet.jpg" media="(min-width: 750px)"> 
+                <!-- Imagen final en formato (SVG) con circulo vectorial de fondo -->        
+                <svg width="480" height="360" xmlns="http://www.w3.org/2000/svg">
+                  <circle r="160" cx="170" cy="160" fill="rgb(37, 95, 61)" />
+                  <image x="50" y="60" width="240" height="180" href="./images/04-dehesa@desktop.jpg"/>
+                  Lo siento, el navegador Web no soporta archivos con formato SVG.  
+                </svg>                  
+                <figcaption><b>Fuente:</b> Imagen de <q>Eugenio Blanco Fern&aacute;ndez</q>. Dehesa del municipio de Santibáñez el Bajo.</figcaption>
+              </picture>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section><!-- sección de selección de menú del portal Web --> 
+        <p>
+          El portal Web se compone de las siguientes páginas:
+          <dl>
+            <dt><u><a id="enlaces_rectangulo" href="./portada.html">Portada</a></u></dt>
+            <dt><u><a id="enlaces_rectangulo" href="./categoria.html">Categoría</a></u></dt>
+              <dd>- <a id="enlaces_rectangulo" href="./detalle1_historia.html">Historia del lugar</a></dd>        
+              <dd>- <a id="enlaces_rectangulo" href="./detalle2_eventos.html">Listado de eventos</a></dd>        
+              <dd>- <a id="enlaces_rectangulo" href="./detalle3_gastro.html">Gastronomía</a></dd>        
+              <dd>- <a id="enlaces_rectangulo" href="./detalle4_lugares.html">Lugares de interés</a></dd>        
+              <dd>- <a id="enlaces_rectangulo" href="./detalle5_llegar.html">Como llegar</a></dd>
+            <dt><u><a id="enlaces_rectangulo" href="./presentacion.html">Presentación</a></u></dt>
+            <dt><u><a id="enlaces_rectangulo" href="./enlaces.html">Enlaces</a></u></dt>
+          </dl>
+        </p>
+      </section>
+    </main><!-- Fin cuerpo de la página -->
+    <include src="./src/footer.html"></include><!-- vincula archivo footer.html con el contenido del pie de página -->  
+  </body>
+</html>

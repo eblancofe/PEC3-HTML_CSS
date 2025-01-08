@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/><!-- configuración de caractéres UTF-8 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><!-- configuramos para dispositivos móviles/tabletas -->
+    <title>Boilerplate Web del municipio Santibáñez el Bajo - UOC-P1. Desarrollo de una web (eblancofe) - CATEGORÍA</title>
+    <!-- vinculamos archivos CSS y JS -->
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" defer src="./app.js"></script><!-- se carga el script JS en modo 'defer' -->
+    <!-- atribución de favicon -->
+    <!-- <a target="_blank" href="https://icons8.com/icon/60044/village">Village</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+    <link rel="shortcut icon" href="./icons/favicon.png"><!-- inserción de favicon -->
+  </head>
+  <body>    
+    <include src="./src/header.html"></include><!-- insertamos archivo HTML de cabecera -->
+    <!-- contenido de la página CATEGORIAS -->
+    <p>Estamos dentro de la sección de <u><i>CATEGORÍA</i></u></p>
+    <main><!-- Inicio cuerpo de la página -->
+      <p><h3>CATEGORÍA</h3></p>    
+      <article>
+        <section><!-- sección de selección de categoría 1 --> 
+          <div class="gran_detalle">
+            <a href="detalle1_historia.html" id="boton_detalle">Historia del lugar</a>
+            <p id="espaciado">Describe de forma breve la historia del municipio, debido que, para poder comprender la situación actual, se debe de comprender el pasado, nuestra historia.</p>                          
+          </div>
+        </section>
+        <section><!-- sección de selección de categoría 2 --> 
+          <div class="gran_detalle">
+            <a href="detalle2_eventos.html" id="boton_detalle">Listado de eventos</a>
+            <p id="espaciado">Muestra un listado con los eventos más celebrados y esperados en el municipio.</p>
+          </div>
+        </section>
+        <section><!-- sección de selección de categoría 3 --> 
+          <div class="gran_detalle">
+            <a href="detalle3_gastro.html" id="boton_detalle">Gastronom&iacute;a</a>      
+            <p id="espaciado">Una peque&ntilde;a muestra de la gastronom&iacute;a de la comarca.</p>
+          </div>
+        </section>
+        <section><!-- sección de selección de categoría 4 --> 
+          <div class="gran_detalle">
+            <a href="detalle4_lugares.html" id="boton_detalle">Lugares de inter&eacute;s</a>      
+            <p id="espaciado">Listado de varios sitios variopintos para realizar una visita tur&iacute;stica por el municipio.</p>
+          </div>
+        </section>
+        <section><!-- sección de selección de categoría 5 --> 
+          <div class="gran_detalle">
+            <a href="detalle5_llegar.html" id="boton_detalle">Cómo llegar</a>      
+            <p id="espaciado">Muestra un mapa interactivo, sobre como llegar desde distintas ubicaciones hasta el municipio.</p>
+          </div>
+        </section>
+      </article>
+      <p id="espaciado">&nbsp;</p><!-- espaciado de párrafo en blanco -->
+      <div class="gran_detalle_imagen">
+        <picture><!-- imagen responsive de distintos tamaños escritorio/tableta/móvil-->
+          <source srcset="./images/14-calle@desktop2.jpg" media="(min-width: 990px)">                
+          <source srcset="./images/14-calle@tablet.jpg" media="(min-width: 750px)">                
+          <img srcset="./images/14-calle@mobile.jpg" loading="lazy" alt="Calle estrecha de pueblo">
+          <figcaption><b>Fuente:</b> Imagen de <q>Eugenio Blanco Fern&aacute;ndez</q>. Calle estrecha de pueblo.</figcaption>
+        </picture>
+      </div>
+      <div class="gran_detalle_imagen">
+        <picture><!-- imagen responsive de distintos tamaños escritorio/tableta/móvil-->
+          <source srcset="./images/18-migas@desktop2.jpg" media="(min-width: 990px)">                
+          <img srcset="./images/18-migas@desktop.jpg" loading="lazy" alt="Calle estrecha de pueblo">
+          <figcaption><b>Fuente:</b> Imagen de <q>Eugenio Blanco Fern&aacute;ndez</q>. Migas Extremeñas en mesa.</figcaption>
+        </picture>
+      </div>
+      <div class="gran_detalle_imagen">
+        <picture><!-- imagen responsive de distintos tamaños escritorio/tableta/móvil -->            
+          <source srcset="./images/22-IglesiaSantiB@desktop2.jpg" media="(min-width: 990px)">
+          <img srcset="./images/22-IglesiaSantiB@desktop.jpg" loading="lazy" alt="Iglesia parroquial del municipio" title="Iglesia parroquial del municipio">
+          <figcaption><b>Fuente:</b> Imagen de <q>Eugenio Blanco Fern&aacute;ndez</q>. Iglesia parroquial del municipio.</figcaption>
+        </picture>
+      </div>
+    </main><!-- Fin cuerpo de la página -->    
+    <include src="./src/footer.html"></include><!-- vincula archivo footer.html con el contenido del pie de página -->  
+  </body>
+</html>
+
+

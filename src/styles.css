@@ -1,0 +1,398 @@
+/* configuración del selector de todo elemento de la página */
+* {  
+  box-sizing: border-box; /* dimensionar elementos dentro del cuerpo de la página */
+}
+/* configuración del cuerpo de la página */ 
+body {
+  color: #1f1f1f;
+  background: linear-gradient(to bottom, #a5a49c, #cad1cf);  
+  font-family: Helvetica, sans-serif; /* tipo de letra principal */
+  font-size: 16px; /* tamaño de letra principal */
+  } 
+/* Personalizar la imagen de fondo en cabecera del portal Web */
+.fondo{
+  background-image: url("./images/00-panoramica.jpg");
+  background-size: 100% 100%;
+}
+/* Personalizar los títulos del portal Web */
+h1 {
+  padding-top: 1%;
+  color: rgb(37, 95, 61);
+  font-weight: bold;
+  }
+h2{
+  color:rgb(88, 111, 141);
+}
+/* Personalizar estilo del menú cabecera (lista) */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  /*position: fixed;*/
+  width: 100%;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #111;
+}
+/* Personalizar botón Detalle de la sección Categoría */
+#boton_detalle{
+  background-color: #333;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  width: 10%;
+  transition: background-color 0.3s ease-out;
+}
+#boton_detalle:hover {
+  background-color: #111;
+  transition-duration: 0.3s;
+}
+.gran_detalle{
+  display: flex; 
+  flex-direction: row;
+  margin-top: 15px;
+}
+.gran_detalle_imagen{
+  display: flex; 
+  flex-direction: column;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Personalizar botón Volver de cada página*/
+#boton_detalle_volver{
+  background-color: #333;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  width: 10%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  transition: background-color 0.3s ease-out;
+}
+#boton_detalle_volver:hover {
+  background-color: #111;
+  transition-duration: 0.3s;
+}
+/* Personalizar espacio entre párrafos */
+#espaciado{
+  margin-left: 10px;
+  text-align: justify;
+  margin-right: 10px;
+}
+/* Crear 3 columnas de anchura 20% + 20% + 60% */
+.column {
+  float: left;
+  padding: 1px;
+}
+.left, .middle {
+  width: 20%;  
+}
+.right {
+  width: 60%;
+  align-items: left;
+}
+/* Clear elementos floats después de la primera columna */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* crear línea horizontal separadora */
+hr {
+  height: 1px;
+  border-color: rgb(37, 95, 61);
+}
+.gran_gastro{
+  display: flex; 
+  flex-direction: column;
+}
+/* Personalizar los hipervínculos a enlaces externos*/
+#enlaces_rectangulo:link, #enlaces_rectangulo:visited {
+  color: black;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+}
+#enlaces_rectangulo:hover, #enlaces_rectangulo:active {
+  background-color: rgb(90, 122, 90);  
+  color: white;
+}
+/* Personalizar fecha/hora de JS */
+#reloj{
+  color: #cad1cf;
+  font-size: 14px;  
+  text-align:right;
+}
+#fecha{
+  color: #cad1cf;
+  font-size: 14px;  
+  text-align:right;
+}
+/* Personalizar la página PORTADA en 4 columnas para insertar imágenes */
+.column_portada {
+  float: left;
+  padding: 10px;
+  padding-left: 20px;
+}
+.left_portada, .middle_portada, .right_portada {
+  width: 25%;  
+}
+/* Personalizar la página INDEX en 4 columnas para insertar imágenes */
+.column_portada_index {
+  float: left;
+  padding: 5px;
+}
+.left_portada_index, .middle_portada_index, .right_portada_index {
+  width: 25%;  
+}
+/* Personalizar botón con logotipo de página y nombre del municipio */
+#pulsame{
+  text-Decoration: none;
+  animation: apareceObjeto 5s; /* añadir transformación CSS de texto */
+}
+/* Personalizar el pie de las imágenes */
+figcaption{
+  font-size: 10px;
+}
+#lista_normal{
+  text-align: left;
+}
+/* Personalizar los iframe de mapas */
+#cartografico {
+  display: block;
+  margin: auto;
+  text-align: center;  
+  margin-top: 2rem;  
+}
+#cartografico_debajo{
+  display: block;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+footer{
+  font-size: 10px;
+  text-align: center; 
+  padding: 3%;
+}
+/* logo en css-clipath header/footer (Cabecera/Pie de página) */
+.logo_cabecera_izda{
+  background-image: linear-gradient(rgb(37, 95, 61), rgb(88, 111, 141));
+  background-color: black;
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  font-size: 2rem;
+}
+.logo_cabecera_dcha{
+  background-image: linear-gradient(rgb(37, 95, 61), rgb(88, 111, 141));
+  background-color: black;
+  clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  font-size: 2rem;
+}
+.logo_pie_izda{
+  background-image: linear-gradient(rgb(37, 95, 61), rgb(88, 111, 141));
+  background-color: black;
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  font-size: 1.5rem; 
+}
+.logo_pie_dcha{
+  background-image: linear-gradient(rgb(37, 95, 61), rgb(88, 111, 141));
+  background-color: black;
+  clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  font-size: 1.5rem; 
+}
+/* transformación CSS sobre texto con efecto */
+@keyframes apareceObjeto {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+#pie_pagina{
+  font-size: 1rem;
+  animation: apareceObjeto 5s; /* añadir transformación CSS de texto */
+}
+.enlaces_horizontales{
+  font-size: 1rem;
+  display: inline;
+  padding-right: 0.5em;
+  animation: apareceObjeto 5s; /* añadir transformación CSS de texto */
+}
+.enlaces_horizontales_sub{
+  font-size: 1rem;
+  margin-bottom: 0.5em;
+  padding-left: 42%;
+  text-align: left;
+  animation: apareceObjeto 5s; /* añadir transformación CSS de texto */
+}
+/* Clip-path marco de imagen tipo elipse */
+.clip-ellipse_presentacion {
+  clip-path: ellipse(120px 90px at center);
+}
+/* Clip-path marco de imagen tipo paralelogramo con transición CSS*/
+.clip-paralelogramo_presentacion_transicion {
+  transition: 0.5s cubic-bezier(1, -1, 0, 2);
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+.clip-paralelogramo_presentacion_transicion:hover {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+}
+/* Clip-path marco de imagen tipo paralelogramo simétrico */
+.clip-paralelogramo_presentacion_simetrico {
+  clip-path: polygon(0% 0%, 75% 0%, 100% 100%, 25% 100%);
+}
+/* Clip-path marco de imagen tipo trapecio con transición CSS*/
+.clip-trapecio_presentacion_transicion { 
+  transition: 0.5s cubic-bezier(1, -1, 0, 2);
+  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+.clip-trapecio_presentacion_transicion:hover {
+  transition: 0.5s cubic-bezier(1, -1, 0, 2);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+/* Clip-path marco de imagen tipo elipse con transición CSS */
+.clip-ellipse_presentacion_transicion {
+  transition: 0.5s cubic-bezier(1, -1, 0, 2);
+  clip-path: ellipse(120px 90px at center);
+}
+.clip-ellipse_presentacion_transicion:hover {
+  clip-path: ellipse(200px 120px at center);
+}
+/* Clip-path poígono de imagen con transición CSS */
+.clip-polygon_presentacion_transicion {
+  transition: 0.8s cubic-bezier(1, -1, 0, 2);
+  clip-path: polygon(50% 5%, 0% 100%, 100% 100%);
+}
+.clip-polygon_presentacion_transicion:hover {
+  clip-path: polygon(45% 100%, 0 0, 100% 0);
+}
+/* Clip-path poígono de imagen tipo ofertón con transición invertida CSS */
+.clip-polygon_presentacion_transicion_invertida {
+  transition: 0.8s cubic-bezier(1, -1, 0, 2);
+  clip-path: polygon(45% 100%, 0 0, 100% 0);
+}
+.clip-polygon_presentacion_transicion_invertida:hover {
+  clip-path: polygon(50% 5%, 0% 100%, 100% 100%);  
+}
+/* Clip-path marco de imagen tipo elipse con transición invertida CSS */
+.clip-ellipse_presentacion_transicion_invertida {
+  transition: 0.5s cubic-bezier(1, -1, 0, 2);
+  clip-path: ellipse(200px 120px at center);
+}
+.clip-ellipse_presentacion_transicion_invertida:hover {  
+  clip-path: ellipse(120px 90px at center);
+}
+/* Configuración para dispositivos móviles/tabletas */
+@media (max-width: 989px) {
+  body {
+    font-size: 1rem;
+  }
+  h1,h2{
+    font-size: 0.9rem;
+  }
+  ul{
+    font-size: 0.9rem;
+  }
+  figcaption{
+    font-size: 0.8rem;
+  }
+  .left_portada{
+    width: 100%;
+    text-align: center;
+  }
+  .right_portada{
+    width: 100%;
+    text-align: center;
+  }
+  .middle_portada{
+    width: 100%;
+    text-align: center;
+  }
+  .left_portada_index{
+    width: 100%;
+    text-align: center;
+  }
+  .right_portada_index{
+    width: 100%;
+    text-align: center;
+  }
+  .middle_portada_index{
+    width: 100%;
+    text-align: center;
+  }
+  .middle{
+    width: 100%;
+    text-align: center;
+  }
+  footer{
+    font-size: 0.9rem;
+  }
+  img {
+    max-width: 100%;
+  }  
+  #boton_detalle{
+    width: 20%;
+    text-align: center;
+  }
+  #boton_detalle_volver{
+    width: 20%;
+    text-align: center;
+  }
+  #cartografico {
+    width: 75%;
+    height: 75%;
+  }
+  #reloj{
+    font-size: 0.8rem;  
+  }
+  #fecha{
+    font-size: 0.8rem;  
+  }
+  .enlaces_horizontales{
+    font-size: 0.9rem;
+  }
+  .enlaces_horizontales_sub{    
+    font-size: 0.9rem;
+    padding-left: 15%;
+  }
+  #pie_pagina{
+    font-size: 0.8rem;
+  }
+  .left{
+    width: 100%;
+  }
+  .middle {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+  }
+  #boton_detalle{    
+    width: 30%;
+  }
+}
