@@ -129,13 +129,13 @@ hr {
   flex-direction: column;
 }
 /* Personalizar los hipervínculos a enlaces externos*/
-.enlaces_rectangulo:link, #enlaces_rectangulo:visited {
+.enlaces_rectangulo:link, .enlaces_rectangulo:visited {
   color: black;
   text-align: left;
   text-decoration: none;
   display: inline-block;
 }
-.enlaces_rectangulo:hover, #enlaces_rectangulo:active {
+.enlaces_rectangulo:hover, .enlaces_rectangulo:active {
   background-color: rgb(90, 122, 90);  
   color: white;
 }
