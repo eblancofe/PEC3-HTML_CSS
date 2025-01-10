@@ -50,7 +50,7 @@ li a:hover {
   background-color: #111;
 }
 /* Personalizar botón Detalle de la sección Categoría */
-#boton_detalle{
+.boton_detalle{
   background-color: #333;
   display: block;
   color: white;
@@ -60,7 +60,7 @@ li a:hover {
   width: 10%;
   transition: background-color 0.3s ease-out;
 }
-#boton_detalle:hover {
+.boton_detalle:hover {
   background-color: #111;
   transition-duration: 0.3s;
 }
@@ -79,7 +79,7 @@ li a:hover {
   margin-right: auto;
 }
 /* Personalizar botón Volver de cada página*/
-#boton_detalle_volver{
+.boton_detalle_volver{
   background-color: #333;
   display: block;
   color: white;
@@ -91,12 +91,12 @@ li a:hover {
   margin-bottom: 2rem;
   transition: background-color 0.3s ease-out;
 }
-#boton_detalle_volver:hover {
+.boton_detalle_volver:hover {
   background-color: #111;
   transition-duration: 0.3s;
 }
 /* Personalizar espacio entre párrafos */
-#espaciado{
+.espaciado{
   margin-left: 10px;
   text-align: justify;
   margin-right: 10px;
@@ -358,11 +358,11 @@ footer{
   img {
     max-width: 100%;
   }  
-  #boton_detalle{
+  .boton_detalle{
     width: 20%;
     text-align: center;
   }
-  #boton_detalle_volver{
+  .boton_detalle_volver{
     width: 20%;
     text-align: center;
   }
@@ -395,7 +395,7 @@ footer{
   .right {
     width: 100%;
   }
-  #boton_detalle{    
+  .boton_detalle{    
     width: 30%;
   }
 }
