@@ -16,10 +16,9 @@ body {
     url("./images/00-panoramica.avif") type("image/avif"),
     url("./images/00-panoramica.jpg") type("image/jpeg"));
     */
-  background-image: image-set(
-    "./images/00-panoramica.avif" type("image/avif"),
-    "./images/00-panoramica.jpg" type("image/jpeg"));
   background-size: 100% 100%;
+  background-image: image-set( "./images/00-panoramica.avif" type("image/avif"),
+  "./images/00-panoramica.jpg" type("image/jpeg") );
 }
 /* Personalizar los títulos del portal Web */
 h1 {
