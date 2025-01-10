@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8"/><!-- configuración de caractéres UTF-8 -->
     <meta name="viewport" content="width=device-width,initial-scale=1"/><!-- configuramos para dispositivos móviles/tabletas -->
     <title>Boilerplate Web del municipio Santibáñez el Bajo - UOC-P1. Desarrollo de una web (eblancofe) - DETALLE-HISTORIA</title>
     <!-- vinculamos archivos CSS y JS -->
     <link rel="stylesheet" href="./styles.css" />
-    <script type="module" defer src="./app.js"></script><!-- se carga el script JS en modo 'defer' -->
+    <script type="module" src="./app.js"></script><!-- se carga el script JS en modo 'defer' -->
     <!-- atribución de favicon -->
     <!-- <a target="_blank" href="https://icons8.com/icon/60044/village">Village</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
     <link rel="shortcut icon" href="./icons/favicon.png"><!-- inserción de favicon -->
@@ -17,7 +17,6 @@
     <p>Estamos dentro de la sección de <u><i>DETALLE - HISTORIA DEL LUGAR</i></u></p>    
     <main><!-- Inicio cuerpo de la página -->
       <p><h3>HISTORIA DEL LUGAR</h3></p>
-      <article>
         <p>
           En esta sección va a encontrar una pequeña y breve historia del municipio de <q>Santibáñez el Bajo</q>.
         </p>
@@ -47,8 +46,7 @@
         <p>
           En la actualidad, este municipio está integrado dentro de la <q>Mancomunidad de Trasierra-Tierras de Granadilla</q>, además de tener el partido judicial de Plasencia.
         </p>
-      </article>
-      <section><!-- sección de imágenes -->
+      <!-- sección de imágenes -->
         <div class="row">
           <div class="column_portada left_portada">
             <p>
@@ -56,9 +54,11 @@
               <picture><!-- imagen responsive de distintos tamaños escritorio/tableta/móvil-->
                 <source srcset="./images/14-calle@desktop.jpg" media="(min-width: 990px)">                
                 <source srcset="./images/14-calle@tablet.jpg," media="(min-width: 750px)">                
-                <img srcset="./images/14-calle@mobile.jpg" loading="lazy" alt="Calle estrecha de pueblo">
-                <figcaption><b>Fuente:</b> Imagen de <q>Eugenio Blanco Fern&aacute;ndez</q>. Calle estrecha de pueblo.</figcaption>
+                <img src="./images/14-calle@mobile.jpg" loading="lazy" alt="Calle estrecha de pueblo">
               </picture>
+              <figure>
+                <figcaption><b>Fuente:</b> Imagen de <q>Eugenio Blanco Fern&aacute;ndez</q>. Calle estrecha de pueblo.</figcaption>
+              </figure>
             </p>
           </div>
           <div class="column_portada right_portada">
@@ -68,8 +68,10 @@
                   <source srcset="./images/15-vistas@desktop.jpg" media="(min-width: 990px)">                
                   <source srcset="./images/15-vistas@tablet.jpg," media="(min-width: 750px)">                
                   <img srcset="./images/15-vistas@mobile.jpg" loading="lazy" alt="Vistas panorámicas de Granadilla">
-                  <figcaption><b>Fuente:</b> Imagen de <q>Eugenio Blanco Fern&aacute;ndez</q>. Vistas panorámicas de Granadilla.</figcaption>
                 </picture>                
+                <figure>
+                  <figcaption><b>Fuente:</b> Imagen de <q>Eugenio Blanco Fern&aacute;ndez</q>. Vistas panorámicas de Granadilla.</figcaption>
+                </figure>                
               </p>
           </div>
           <div class="column_portada middle_portada">
@@ -79,8 +81,10 @@
                 <source srcset="./images/16-yacimiento@desktop.jpg" media="(min-width: 990px)">                
                 <source srcset="./images/16-yacimiento@tablet.jpg," media="(min-width: 750px)">                
                 <img srcset="./images/16-yacimiento@mobile.jpg" loading="lazy" alt="Yacimiento Romano Ciudad de Cáparra">
-                <figcaption><b>Fuente:</b> Imagen de <q>Eugenio Blanco Fern&aacute;ndez</q>. Yacimiento Romano Ciudad de Cáparra.</figcaption>
               </picture>                          
+              <figure>
+                <figcaption><b>Fuente:</b> Imagen de <q>Eugenio Blanco Fern&aacute;ndez</q>. Yacimiento Romano Ciudad de Cáparra.</figcaption>
+              </figure>
             </p>
           </div>
           <div class="column_portada middle_portada">
@@ -90,13 +94,14 @@
                 <source srcset="./images/17-escalinata@desktop.jpg" media="(min-width: 990px)">                
                 <source srcset="./images/17-escalinata@tablet.jpg," media="(min-width: 750px)">                
                 <img srcset="./images/17-escalinata@mobile.jpg" loading="lazy" alt="Escalinata hacia arriba">
-                <figcaption><b>Fuente:</b> Imagen de <q>Eugenio Blanco Fern&aacute;ndez</q>. Escalinata hacia arriba.</figcaption>
               </picture>              
+              <figure>
+                <figcaption><b>Fuente:</b> Imagen de <q>Eugenio Blanco Fern&aacute;ndez</q>. Escalinata hacia arriba.</figcaption>
+              </figure>
             </p>
           </div>
         </div>
-      </section>
-      <a href="categoria.html" id="boton_detalle_volver">Volver</a><!-- botón para volver a la página de Categoría -->
+      <a href="categoria.html" class="boton_detalle_volver">Volver</a><!-- botón para volver a la página de Categoría -->
     </main><!-- Fin cuerpo de la página -->
     <include src="./src/footer.html"></include><!-- vincula archivo footer.html con el contenido del pie de página -->  
   </body>
