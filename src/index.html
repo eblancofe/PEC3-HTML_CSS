@@ -6,7 +6,7 @@
     <title>Boilerplate Web del municipio Santibáñez el Bajo - UOC-P3. Desarrollo de una web (eblancofe) - PRINCIPAL</title>
     <!-- vinculamos archivos CSS y JS -->
     <link rel="stylesheet" href="./styles.css" />
-    <script defer src="./app.js" type="module"></script><!-- se carga el script JS en modo 'defer' -->
+    <script type="module" defer src="./app.js"></script><!-- se carga el script JS en modo 'defer' -->
     <!-- atribución de favicon -->
     <!-- <a target="_blank" href="https://icons8.com/icon/60044/village">Village</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
     <link rel="shortcut icon" href="./icons/favicon.png"><!-- inserción de favicon -->
@@ -30,60 +30,64 @@
         <div class="row">
           <div class="column_portada_index left_portada_index">
             <p>
-              <figure><!-- imagen responsive de distintos tamaños escritorio/tableta/móvil-->
+              <picture><!-- imagen responsive de distintos tamaños escritorio/tableta/móvil-->
                 <source srcset="./images/01-tejados@desktop.jpg" media="(min-width: 990px)">                
                 <source srcset="./images/01-tejados@tablet.jpg" media="(min-width: 750px)">     
                 <!-- Imagen final en formato (SVG) con circulo vectorial de fondo -->         
+              </picture>
                 <svg width="480" height="360" xmlns="http://www.w3.org/2000/svg">
                   <circle r="160" cx="170" cy="160" fill="rgb(37, 95, 61)" />
                   <image x="50" y="60" width="240" height="180" href="./images/01-tejados@mobile.jpg"/>
-                  Lo siento, el navegador Web no soporta archivos con formato SVG.  
                 </svg>
+              <figure>
                 <figcaption><b>Fuente:</b> Imagen de <q>Eugenio Blanco Fern&aacute;ndez</q>. Tejados de Santibáñez el Bajo.</figcaption>
               </figure>
             </p>
           </div>
           <div class="column_portada_index right_portada_index">
               <p>
-                <figure><!-- imagen responsive de distintos tamaños escritorio/tableta/móvil-->
+                <picture><!-- imagen responsive de distintos tamaños escritorio/tableta/móvil-->
                   <source srcset="./images/02-puerta@desktop.jpg" media="(min-width: 990px)">                
                   <source srcset="./images/02-puerta@tablet.jpg" media="(min-width: 750px)"> 
+                </picture>
                   <!-- Imagen final en formato (SVG) con circulo vectorial de fondo -->
                   <svg width="480" height="360" xmlns="http://www.w3.org/2000/svg">
                     <circle r="160" cx="170" cy="160" fill="rgb(37, 95, 61)" />
                     <image x="50" y="60" width="240" height="180" href="./images/02-puerta@mobile.jpg"/>
-                    Lo siento, el navegador Web no soporta archivos con formato SVG.  
                   </svg>
+                <figure>
                   <figcaption><b>Fuente:</b> Imagen de <q>Eugenio Blanco Fern&aacute;ndez</q>. Puerta de monumento histórico.</figcaption>
                 </figure>
-              </p>
+              
           </div>
           <div class="column_portada_index middle_portada_index">
             <p>
-              <figure><!-- imagen responsive de distintos tamaños escritorio/tableta/móvil-->
+              <picture><!-- imagen responsive de distintos tamaños escritorio/tableta/móvil-->
                 <source srcset="./images/03-montes@desktop.jpg" media="(min-width: 990px)">                
                 <source srcset="./images/03-montes@tablet.jpg" media="(min-width: 750px)">    
+              </picture>
                 <!-- Imagen final en formato (SVG) con circulo vectorial de fondo -->            
                 <svg width="480" height="360" xmlns="http://www.w3.org/2000/svg">
                   <circle r="160" cx="170" cy="160" fill="rgb(37, 95, 61)" />
                   <image x="50" y="60" width="240" height="180" href="./images/03-montes@mobile.jpg"/>
-                  Lo siento, el navegador Web no soporta archivos con formato SVG.  
                 </svg>
+              <figure>
                 <figcaption><b>Fuente:</b> Imagen de <q>Eugenio Blanco Fern&aacute;ndez</q>. Paisaje montañoso de montes de Santibáñez el Bajo.</figcaption>
               </figure>
             </p>
           </div>
           <div class="column_portada_index middle_portada_index">
             <p>              
-              <figure><!-- imagen responsive de distintos tamaños escritorio/tableta/móvil -->
+              <picture><!-- imagen responsive de distintos tamaños escritorio/tableta/móvil -->
                 <source srcset="./images/04-dehesa@desktop.jpg" media="(min-width: 990px)">                
                 <source srcset="./images/04-dehesa@tablet.jpg" media="(min-width: 750px)"> 
+              </picture>
                 <!-- Imagen final en formato (SVG) con circulo vectorial de fondo -->        
                 <svg width="480" height="360" xmlns="http://www.w3.org/2000/svg">
                   <circle r="160" cx="170" cy="160" fill="rgb(37, 95, 61)" />
                   <image x="50" y="60" width="240" height="180" href="./images/04-dehesa@desktop.jpg"/>
-                  Lo siento, el navegador Web no soporta archivos con formato SVG.  
-                </svg>                  
+                </svg>  
+              <figure>
                 <figcaption><b>Fuente:</b> Imagen de <q>Eugenio Blanco Fern&aacute;ndez</q>. Dehesa del municipio de Santibáñez el Bajo.</figcaption>
               </figure>
             </p>
