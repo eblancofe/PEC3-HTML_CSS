@@ -61,11 +61,11 @@
             <!-- efecto imagen círculo SVG a imagen -->
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="240" height="180">
               <defs>
-                <filter id="filter">
+                <filter id="filter1">
                   <feGaussianBlur stdDeviation="5" />
                 </filter>
                 <mask id="mask1">
-                  <ellipse cx="120" cy="80" rx="100" ry="50" fill="white" filter="url(#filter)"></ellipse>
+                  <ellipse cx="120" cy="80" rx="100" ry="50" fill="white" filter="url(#filter1)"></ellipse>
                 </mask>
               </defs>                   
               <image xlink:href="./images/11-castillo@desktop.jpg" mask="url(#mask1)"></image>                
@@ -106,11 +106,11 @@
             <!-- efecto imagen elipse SVG a imagen -->
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="240" height="180">
               <defs>
-                <filter id="filter">
+                <filter id="filter2">
                   <feGaussianBlur stdDeviation="5" />
                 </filter>
                 <mask id="mask2">                      
-                  <ellipse cx="120" cy="80" rx="100" ry="50" fill="white" filter="url(#filter)"></ellipse>                    
+                  <ellipse cx="120" cy="80" rx="100" ry="50" fill="white" filter="url(#filter2)"></ellipse>                    
                 </mask>
               </defs>                   
               <image xlink:href="./images/13-arcos@desktop.jpg" mask="url(#mask2)"></image>                
