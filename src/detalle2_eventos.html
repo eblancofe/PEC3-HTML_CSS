@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8"/><!-- configuración de caractéres UTF-8 -->
     <meta name="viewport" content="width=device-width,initial-scale=1"/><!-- configuramos para dispositivos móviles/tabletas -->
     <title>Boilerplate Web del municipio Santibáñez el Bajo - UOC-P1. Desarrollo de una web (eblancofe) - DETALLE-EVENTOS</title>
     <!-- vinculamos archivos CSS y JS -->
     <link rel="stylesheet" href="./styles.css" />
-    <script type="module" defer src="./app.js"></script><!-- se carga el script JS en modo 'defer' -->
+    <script type="module" src="./app.js"></script><!-- se carga el script JS en modo 'defer' -->
     <!-- atribución de favicon -->
     <!-- <a target="_blank" href="https://icons8.com/icon/60044/village">Village</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
     <link rel="shortcut icon" href="./icons/favicon.png"><!-- inserción de favicon -->
@@ -17,11 +17,9 @@
     <p>Estamos dentro de la sección de <u><i>DETALLE - LISTADO DE EVENTOS</i></u></p>    
     <main><!-- Inicio cuerpo de la página -->
       <p><h3>LISTADO DE EVENTOS</h3></p>
-      <article>
         <p>
           Se muestra un listado de las fechas, con los eventos correspondientes más destacados que se celebran en el municipio.
         </p> 
-      </article>        
       <hr><!-- línea separadora -->
       <section><!-- sección de eventos --> 
         <div class="row">
@@ -36,7 +34,7 @@
           </div>
           <div class="column middle"><h4>Día 2: Festividad de las Candelas</h4></div>
           <div class="column right">
-            <p id="espaciado">
+            <p class="espaciado">
               Se celebra una misa religiosa, para después pasar a soltar varias palomas. Acto seguido, se realizar una procesión alrededor de la iglesia, 
               se portan varias velas encendidas, así como también una serie de ritos de carácter tipo religioso. Desde hace varios años ya, parte de la organización 
               de esta festividad es parte de la <q>Asociación de Mujeres Las Candelas</q> que existe en el municipio.
@@ -47,7 +45,7 @@
           <div class="column left"><!-- <h3>Febrero</h3> --></div>
           <div class="column middle"><h4>Día 3: Festividad de San Blas</h4></div>
           <div class="column right">
-            <p id="espaciado">
+            <p class="espaciado">
               Una de las fiestas populares que existen en el municipio, en este caso, el protagonista de estas fiestas son los quintos de ese año.
             </p>
           </div>      
@@ -78,7 +76,7 @@
           </div>
           <div class="column middle"><h4>Día 19: Festividad de San José</h4></div>
           <div class="column right">
-            <p id="espaciado">
+            <p class="espaciado">
               Celebración y conmemoración del día del padre. 
             </p>
           </div>      
@@ -87,7 +85,7 @@
           <div class="column left"><!-- <h3>Marzo</h3> --></div>
           <div class="column middle"><h4>Semana Santa: Festividad de la Semana Santa</h4></div>
           <div class="column right">
-            <p id="espaciado">
+            <p class="espaciado">
               Según el año y calendario puede celebrarse en marzo o en abril, según cuando caíga. Estamos ante una serie de actos religiosos al igual que en 
               otros tantos regiones 
             </p>
@@ -108,7 +106,7 @@
           </div>
           <div class="column middle"><h4>Lunes de Pascua</h4></div>
           <div class="column right">
-            <p id="espaciado">
+            <p class="espaciado">
               Es la romería tradicional del pueblo, recuperada desde el año 1984 más concretamente. Esta celebración ha sido trasladada al 
               puente de primeros mayo por razones climatológicas y turísticas. 
             </p>
@@ -129,7 +127,7 @@
           </div>
           <div class="column middle"><!-- <h4>Lunes de Pascua</h4> --></div>
           <div class="column right">
-            <p id="espaciado">
+            <p class="espaciado">
               Durante este mes concretametne se celebran las fiestas de las Comuniones, la Ascensión y el Corpus Cristi, aunque algunas de esta festividades 
               pueden celebrarse en el mes junio, por motivos de calendario.
             </p>
@@ -150,7 +148,7 @@
           </div>
           <div class="column middle"><h4>Día 1: Ferias tradicionales</h4></div>
           <div class="column right">
-            <p id="espaciado">
+            <p class="espaciado">
               Es una fiesta de origen ganadero, ya que está muy arraigada al municipio, estuvo implantada con bastante éxito durante los años 30 del siglo XX. 
               Gozaron e gran popularidad y atrajeron a numerosos ganaderos de la comarca y demás zonas, no sólo de Extremadura, sino de otras comarcas y regiones más alejadas. 
               El motivo fue la gran adaptación a las nuevas formas de gestión de la actividad ganadera, que han acabado con el rodeo de los ganados, la feria ha dejado de 
@@ -162,7 +160,7 @@
           <div class="column left"><!-- <h3>Junio</h3> --></div>
           <div class="column middle"><h4>Día 24: Festividad de San Juan</h4></div>
           <div class="column right">
-            <p id="espaciado">
+            <p class="espaciado">
               En esta festividad, ee celebra la víspera, con un gran encendido de hogueras de cantueso, realizando en las mismas también saltos rituales sobre las llamas 
               (cuyo origen se basa en la creencia de que servían para alejar la sarna y otros males que podían afectar a los vecinos del pueblo). 
               Bastantes años atrás, durante el propio día de la festividad San Juan se celebraba una capea y se realizaban otros actos religiosos.
@@ -184,7 +182,7 @@
           </div>
           <div class="column middle"><h4>Día 10: Festividad de San Cristóbal</h4></div>
           <div class="column right">
-            <p id="espaciado">
+            <p class="espaciado">
               Es una fiesta que se implantó durante la segunda mitad del siglo XX, a raíz de aumentar considerablemente el gremio de conductores de la localidad. 
               Procesión alrededor del pueblo de todo tipo de vehículos.
             </p>
@@ -194,7 +192,7 @@
           <div class="column left"><!-- <h3>Julio</h3> --></div>
           <div class="column middle"><h4>Día 25: Festividad de Santiago Apóstol</h4></div>
           <div class="column right">
-            <p id="espaciado">
+            <p class="espaciado">
               Es una fiesta que coincide con el patrón de la parroquia del municipio.
             </p>
           </div>      
@@ -214,7 +212,7 @@
           </div>
           <div class="column middle"><h4>Día 5: Fiesta del emigrante</h4></div>
           <div class="column right">
-            <p id="espaciado">
+            <p class="espaciado">
               Gracias a su creación a finales de los años 70 del siglo XX por la peña <q>Los Castúos</q>, es una forma de rendir homenaje a los habitantes del municipio que tuvieron que abandonarlo en su momento para buscar prosperidad en las ciudades y capitales principales del país.
             </p>
           </div>      
@@ -234,7 +232,7 @@
           </div>
           <div class="column middle"><h4>Día 8: Día de la Comunidad de Extremadura</h4></div>
           <div class="column right">
-            <p id="espaciado">
+            <p class="espaciado">
               Es una fiesta coincide con la festividad de religiosa de la virgen de Guadalupe, a su vez, declarada patrona de Extremadura, se 
               viene celebrando desde mediados de los años 80, concretamente desde el 1985.
             </p>
@@ -244,7 +242,7 @@
           <div class="column left"><!-- <h3>Septiembre</h3> --></div>
           <div class="column middle"><h4>Día 23: Festividad del Santísimo Cristo de la Paz</h4></div>
           <div class="column right">
-            <p id="espaciado">
+            <p class="espaciado">
               Es una de las festividades principales del municipio, además de tener más solera de la zona y alrededores.
             </p>
           </div>      
@@ -264,7 +262,7 @@
           </div>
           <div class="column middle"><h4>Día 1: Festividad de todos los Santos</h4></div>
           <div class="column right">
-            <p id="espaciado">
+            <p class="espaciado">
               Es una fiesta coincide con la festividad a nivel nacional en todo el país.
             </p>
           </div>      
@@ -284,7 +282,7 @@
           </div>
           <div class="column middle"><h4>Día 8: Festividad de la Pura (Inmaculada Concepción)</h4></div>
           <div class="column right">
-            <p id="espaciado">
+            <p class="espaciado">
               Una festividad conocida en el municipio como "La chicharrona", debido a que daba el comienzo para comenzar a realizar las matanzas 
               en las casas de los habitantes del pueblo.
             </p>
