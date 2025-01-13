@@ -8,8 +8,8 @@
     <!--
     <link rel="stylesheet" href="./styles.css" />
     -->
-    <link rel="stylesheet" href="./style.css" media="print" onload="this.media='all'">
-    <script async type="module" src="./app.js"></script><!-- se carga el script JS en modo 'defer' -->
+    <link rel="stylesheet" href="./styles.css" media="print" onload="this.media='all'"><!-- carga de forma asíncrona -->
+    <script async type="module" src="./app.js"></script><!-- se carga el script JS en modo 'async' -->
     <!-- atribución de favicon -->
     <!-- <a target="_blank" href="https://icons8.com/icon/60044/village">Village</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
     <link rel="shortcut icon" href="./icons/favicon.png"><!-- inserción de favicon -->
@@ -71,7 +71,7 @@
                   <ellipse cx="120" cy="80" rx="100" ry="50" fill="white" filter="url(#filter1)"></ellipse>
                 </mask>
               </defs>                   
-              <image xlink:href="./images/11-castillo@desktop.jpg" mask="url(#mask1)"></image>                
+              <image xlink:href="./images/11-castillo@desktop.jpg" mask="url(#mask1)" width="240" height="180"></image>                
             </svg>
             <figure>
               <figcaption><b>Fuente:</b> Imagen de <q>Eugenio Blanco Fern&aacute;ndez</q>. Castillo de Granadilla.</figcaption>
@@ -96,7 +96,7 @@
             <picture><!-- imagen responsive de distintos tamaños escritorio/tableta/móvil-->
               <source srcset="./images/09-freedom@desktop.jpg" media="(min-width: 990px)">                
               <source srcset="./images/09-freedom@desktop.jpg" media="(min-width: 750px)">                
-              <img src="./images/09-freedom@mobile.jpg" loading="lazy"alt="Puercos comiendo en la naturaleza" title="Puercos comiendo en la naturaleza" class="clip-trapecio_presentacion_transicion">
+              <img src="./images/09-freedom@mobile.jpg" loading="lazy" alt="Puercos comiendo en la naturaleza" title="Puercos comiendo en la naturaleza" class="clip-trapecio_presentacion_transicion">
             </picture>
             <figure>
               <figcaption><b>Fuente:</b> Imagen de <q>Eugenio Blanco Fern&aacute;ndez</q>. Puercos comiendo en la naturaleza.</figcaption>
@@ -116,7 +116,7 @@
                   <ellipse cx="120" cy="80" rx="100" ry="50" fill="white" filter="url(#filter2)"></ellipse>                    
                 </mask>
               </defs>                   
-              <image xlink:href="./images/13-arcos@desktop.jpg" mask="url(#mask2)"></image>                
+              <image xlink:href="./images/13-arcos@desktop.jpg" mask="url(#mask2)" width="240" height="180"></image>                
             </svg>
             <figure>
               <figcaption><b>Fuente:</b> Imagen de <q>Eugenio Blanco Fern&aacute;ndez</q>. Arcos Romanos de Valdecañas.</figcaption>
