@@ -12,9 +12,7 @@ body {
 /* Personalizar la imagen de fondo en cabecera del portal Web */
 .fondo{  
   background-size: 100% 100%;
-  background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover;
   background-image: image-set( 
     "./images/00-panoramica.avif" type("image/avif"),
     "./images/00-panoramica.jpg" type("image/jpeg") 
