@@ -4,13 +4,9 @@
     <meta charset="utf-8"/><!-- configuración de caractéres UTF-8 -->
     <meta name="viewport" content="width=device-width,initial-scale=1"/><!-- configuramos para dispositivos móviles/tabletas -->
     <title>Boilerplate Web del municipio Santibáñez el Bajo - UOC-P3. Desarrollo de una web (eblancofe) - PRINCIPAL</title>
-    <!-- vinculamos archivos CSS y JS -->
-    <!--
-    <link rel="stylesheet" href="./styles.css" />
-    -->
-    <link rel="stylesheet" href="./styles.css" media="print" onload="this.media='all'">
-    <script async type="module" src="./app.js"></script><!-- se carga el script JS en modo 'defer' por defecto con el atributo 'type="module"' -->
-    <!-- The defer attribute has no effect on module scripts — they defer by default. -->
+    <!-- vinculamos archivos CSS y JS -->    
+    <link rel="stylesheet" href="./styles.css" media="print" onload="this.media='all'"><!-- carga de forma asíncrona -->
+    <script async type="module" src="./app.js"></script><!-- se carga el script JS en modo 'async' --><!-- The defer attribute has no effect on module scripts — they defer by default. -->
     <!-- atribución de favicon -->
     <!-- <a target="_blank" href="https://icons8.com/icon/60044/village">Village</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
     <link rel="shortcut icon" href="./icons/favicon.png"><!-- inserción de favicon -->

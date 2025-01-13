@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1"/><!-- configuramos para dispositivos móviles/tabletas -->
     <title>Boilerplate Web del municipio Santibáñez el Bajo - UOC-P1. Desarrollo de una web (eblancofe) - ENLACES</title>
     <!-- vinculamos archivos CSS y JS -->
-    <link rel="stylesheet" href="./styles.css" />
-    <script type="module" src="./app.js"></script><!-- se carga el script JS en modo 'defer' -->
+    <link rel="stylesheet" href="./styles.css" media="print" onload="this.media='all'"><!-- carga de forma asíncrona -->    
+    <script async type="module" src="./app.js"></script><!-- se carga el script JS en modo 'async' -->
     <!-- atribución de favicon -->
     <!-- <a target="_blank" href="https://icons8.com/icon/60044/village">Village</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
     <link rel="shortcut icon" href="./icons/favicon.png"><!-- inserción de favicon -->
