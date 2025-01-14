@@ -10,14 +10,12 @@ body {
   font-size: 16px; /* tamaño de letra principal */
   } 
 /* Personalizar la imagen de fondo en cabecera del portal Web */
-.fondo{  
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
+.fondo{   
   background-image: image-set( 
     "./images/00-panoramica.avif" type("image/avif"),
     "./images/00-panoramica.jpg" type("image/jpeg") 
   );
+  background-size: 100% 100%;
 }
 /* Personalizar los títulos del portal Web */
 h1 {
