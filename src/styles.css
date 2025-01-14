@@ -313,6 +313,9 @@ footer{
 .clip-ellipse_presentacion_transicion_invertida:hover {  
   clip-path: ellipse(120px 90px at center);
 }
+.pie{
+  padding-top: 1%;
+}
 /* Configuración para dispositivos móviles/tabletas */
 @media (max-width: 989px) {
   body {
