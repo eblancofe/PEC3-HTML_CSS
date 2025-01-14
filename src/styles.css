@@ -400,4 +400,7 @@ footer{
   .boton_detalle{    
     width: 30%;
   }
+  .enlaces_rectangulo{
+    padding: 3.5%;
+  }
 }
