@@ -7,7 +7,8 @@
   },
   "dependencies": {
     "@parcel/rust": "^2.13.3",
-    "dayjs": "^1.11.13"
+    "dayjs": "^1.11.13",
+    "web-vitals": "^4.2.4"
   },
   "name": "pec3-html_css",
   "version": "1.0.0",
